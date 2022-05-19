@@ -17,7 +17,7 @@ class tad
       {
         if(key == ' ')
         {
-          for (int i = 1; i < mods.num; i++)
+          for (int i = 1; i < num; i++)
           {
             posY[i] = pos[i];
             size[i] = random(1,11);
@@ -27,16 +27,22 @@ class tad
           // colour of the tadpole
           stroke(random(10,200), random(10,200), random(10,200));
           
+          textSize(36);
+          text(words, 50, 120, 540, 300);
+  
           for (int i = 1; i < size[i]; i++)
-          {          
+          { 
+            //legs
             strokeWeight(5);
               line(width/3+width/7,posY[i],width/4+width/5, posY[i]);
               line(width/3+width/5.2,posY[i],width/4+width/3.3, posY[i]);
             
+            //body
             noFill();
             strokeWeight(5);
             ellipse(width/2, posY[i], 50,50); 
           }
+          //head
           ellipse(width/2, 200, 50,50); 
         }
       }

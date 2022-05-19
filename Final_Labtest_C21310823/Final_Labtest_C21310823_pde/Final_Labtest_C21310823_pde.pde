@@ -1,5 +1,8 @@
 tad mods = new tad();
 
+char letters;
+String words = "John";
+
 void setup()
 {
   fullScreen();
