@@ -14,5 +14,7 @@ void setup()
  
 void draw()
 {
+  delay(100);
+  
   mods.body();
 }
