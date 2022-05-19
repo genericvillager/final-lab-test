@@ -1,22 +1,18 @@
+tad mods = new tad();
+
 void setup()
 {
   fullScreen();
   background(0);
-  
-  for (int i = 1; i < num; i++)
+
+  for (int i = 1; i < mods.num; i++)
   {
-    posY[i] = pos[i];
-    size[i] = random(1,11);
+    mods.posY[i] = mods.pos[i];
+    mods.size[i] = random(1,11);
   }
 }
-
+ 
 void draw()
 {
-  if (keyPressed)
-  {
-    if(key == ' ')
-    {
-      body();
-    }
-  }
+  mods.body();
 }
